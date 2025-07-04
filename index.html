@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quer namorar comigo?</title>
+</head>
+<body>
+  <h1>Quer namorar comigo?</h1>
+  <button onclick="perguntarNamoro()">Responder</button>
+
+  <h1>Quer me dar um emprego?</h1>
+  <button onclick="perguntarEmprego()">Responder</button>
+
+  <script>
+    function perguntarNamoro() {
+      let resposta = prompt("Quer namorar comigo?").toUpperCase().trim();
+      if (resposta === "SIM") {
+        alert("Tô muito feliz, te amo!!");
+      } else {
+        alert("Nem queria mesmo!");
+      }
+    }
+
+    function perguntarEmprego() {
+      let resposta = prompt("Quer me dar um emprego?").toUpperCase().trim();
+      if (resposta === "SIM") {
+        alert("Obaaa! Bora trabalhar juntos!");
+      } else {
+        alert("Tudo bem, vou tentar de novo em outra oportunidade. :)");
+      }
+    }
+  </script>
+</body>
+</html>
