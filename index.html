@@ -2,7 +2,65 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>Quer namorar comigo?</title>
+  <title>Quer namorar comigo? Ou me dar um emprego?</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #fceabb, #f8b500);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 3px #b47d00;
+    }
+
+    button {
+      background-color: #ff6f00;
+      border: none;
+      padding: 15px 30px;
+      margin: 15px;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e65a00;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 10px;
+      font-size: 0.9rem;
+      color: #444;
+      opacity: 0.7;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      button {
+        width: 80%;
+        padding: 12px;
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <h1>Quer namorar comigo?</h1>
@@ -10,6 +68,8 @@
 
   <h1>Quer me dar um emprego?</h1>
   <button onclick="perguntarEmprego()">Responder</button>
+
+  <footer>Projeto simples em HTML, CSS e JS para brincar com prompts.</footer>
 
   <script>
     function perguntarNamoro() {
